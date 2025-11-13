@@ -1,58 +1,32 @@
-# SQL Online Retail Analysis
-This project simulates an **Online Retail Company Database** using data generated from **[Mockaroo](https://www.mockaroo.com/)**.  
-The dataset contains realistic customer, product, and order information for SQL analysis and query practice.
+# 🛍️ SQL Online Retail Database – Mock Data
+
+This project simulates an **Online Retail Company Database** using realistic mock data generated from **[Mockaroo](https://www.mockaroo.com/)**.  
+The dataset is designed for SQL learning, query practice, and retail analytics using **SQL Server Management Studio (SSMS)**.
 
 ---
 
-## 📦 Tables and Data Overview
-
-### 🧑‍💼 Customers (200 rows)
-Contains customer details such as:
-- `CustomerID` (INT, Primary Key, Auto Increment)
-- `FirstName`, `LastName`
-- `Email`, `Phone`
-- `City`, `Country`, `RegistrationDate`
-
----
-
-### 🏷️ Categories (10 rows)
-Defines product categories such as:
-- `CategoryID` (INT, Primary Key)
-- `CategoryName`
-- `Description`
+## 📊 Table Overview
+The database includes the following five tables:
+1. **Customers** – Customer personal and contact details  
+2. **Categories** – Product category information  
+3. **Products** – Product catalog with pricing and stock details  
+4. **Orders** – Customer order-level records  
+5. **OrderItems** – Detailed items within each order  
 
 ---
 
-### 🛒 Products (150 rows)
-Lists available products with pricing and category mapping:
-- `ProductID` (INT, Primary Key)
-- `ProductName`
-- `CategoryID` (Foreign Key → Categories)
-- `UnitPrice`
-- `StockQuantity`
-- `AddedDate`
+## 📁 Files Included
+
+### 🗂️ **File 1: Create DB Tables.sql**
+- Contains SQL scripts to create the database `RetailDB`
+- Defines schema and table structures for all 5 tables
+- Includes `PRIMARY KEY`, `FOREIGN KEY`, and `IDENTITY` relationships
+
+### 💡 **File 2: Question & Queries.sql**
+- Includes SQL queries for:
+  - Data exploration  
+  - Joins and aggregations  
+  - Customer and sales insights  
+  - Product and category analysis  
 
 ---
-
-### 📦 Orders (400 rows)
-Stores order-level details linked to customers:
-- `OrderID` (INT, Primary Key)
-- `CustomerID` (Foreign Key → Customers)
-- `OrderDate`
-- `TotalAmount`
-- `PaymentMethod`
-- `OrderStatus`
-
----
-
-### 🧾 OrderItems (1000 rows)
-Contains individual order line items:
-- `OrderItemID` (INT, Primary Key)
-- `OrderID` (Foreign Key → Orders)
-- `ProductID` (Foreign Key → Products)
-- `Quantity`
-- `UnitPrice`
-- `Subtotal`
-
----
-
