@@ -17,7 +17,7 @@ The database includes the following five tables:
 
 ## 📁 Files Included
 
-###  **File 1: Create DB Tables.sql**
+## 📄 **File 1: Create DB Tables.sql**
 - Contains SQL scripts to create the database `RetailDB`
 - Defines schema and table structures for all 5 tables
 - Includes `PRIMARY KEY`, `FOREIGN KEY`, and `IDENTITY` relationships
@@ -54,5 +54,4 @@ A general log table is created to capture Records detail
 - Trigger for **UPDATE** on Customers  
 - Trigger for **DELETE** on Customers  
 
-These triggers help maintain a complete audit trail of all changes for internal monitoring and reporting.
 ---
