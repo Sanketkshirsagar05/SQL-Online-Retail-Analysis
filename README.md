@@ -22,11 +22,37 @@ The database includes the following five tables:
 - Defines schema and table structures for all 5 tables
 - Includes `PRIMARY KEY`, `FOREIGN KEY`, and `IDENTITY` relationships
 
-###  **File 2: Question & Queries.sql**
-- Includes SQL queries for:
-  - Data exploration  
-  - Joins and aggregations  
-  - Customer and sales insights  
-  - Product and category analysis  
+## 📄 **File 2 – Questions & Queries.sql**
 
+Contains SQL queries for analysis:
+- Total sales and revenue insights  
+- Top-selling products  
+- Customer purchase analysis  
+- Category-wise performance  
+- Monthly & yearly sales trends  
+- Profit calculations  
+- Order & product level deep-dive queries  
+
+## 📄 **File 3 – LOG & Trigger.sql**
+
+To automatically log changes in the database, triggers are used.  
+Triggers execute automatically during **INSERT, UPDATE, or DELETE** operations.
+
+### **Step 1: Create Log Table**
+
+A general log table is created to capture Records detail
+
+### **Step 2: Create Triggers for Each Table**
+
+#### **A. Products Table Triggers**
+- Trigger for **INSERT** on Products  
+- Trigger for **UPDATE** on Products  
+- Trigger for **DELETE** on Products  
+
+#### **B. Customers Table Triggers**
+- Trigger for **INSERT** on Customers  
+- Trigger for **UPDATE** on Customers  
+- Trigger for **DELETE** on Customers  
+
+These triggers help maintain a complete audit trail of all changes for internal monitoring and reporting.
 ---
