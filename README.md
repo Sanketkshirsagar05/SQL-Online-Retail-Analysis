@@ -79,3 +79,14 @@ This file contains SQL views created to simplify complex queries and improve dat
 - **Recent Orders View:** Displays orders placed within the last 30 days  
 
 These views help in quick reporting, easier querying, and improved data organization.
+
+---
+
+## 📄 File 6 – Questions & Queries2.sql
+
+Contains additional advanced queries using views to analyze:
+- Products, categories, and pricing  
+- Customer orders and spending  
+- Recent orders and latest purchases  
+- Low stock items and monthly sales  
+- Top customers and detailed order breakdowns  
