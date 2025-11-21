@@ -84,3 +84,16 @@ Contains additional advanced queries using views to analyze:
 - Recent orders and latest purchases  
 - Low stock items and monthly sales  
 - Top customers and detailed order breakdowns  
+
+## 📄 File 7 – Security Features.sql
+
+Implements security and role-based access control (RBAC) for the database.
+
+### Includes:
+- Creating SQL Server logins and mapping them to database users  
+- Defining custom roles (e.g., SalesRole, MarketingRole)  
+- Assigning users to roles  
+- Granting and revoking permissions (SELECT, INSERT, UPDATE)  
+- Checking effective permissions for auditing  
+
+This file ensures controlled access to database objects and enhances overall security.
